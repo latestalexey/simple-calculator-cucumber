@@ -13,7 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.11</junit.version>
-    <cucumber.version>1.1.5</cucumber.version>
+    <cucumber.version>1.2.5</cucumber.version>
   </properties>
 
   <dependencies>
@@ -35,7 +35,7 @@
 	</dependency>
 	 <dependency>
 		<groupId>info.cukes</groupId>
-		<artifactId>cucumber-java</artifactId>
+		<artifactId>cucumber-java8</artifactId>
 		<version>${cucumber.version}</version>
 		<scope>test</scope>
 	</dependency>    
