@@ -8,19 +8,19 @@ public class CalculatorDivisionTest {
 
 	private CalculatorHandler calculatorHandler = new CalculatorHandler();
 
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void shouldDivideTwoPositiveNumbers() {
-		assertTrue(calculatorHandler.doDivision(15, 5) == 3);
+		assertTrue(calculatorHandler.doOperation(15, 5, Operator.DIVISION) == 3);
 	}
 
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void shouldAddOnePositiveNumberAndZero() {
-		assertTrue(calculatorHandler.doDivision(0, 6) == 0);
+		assertTrue(calculatorHandler.doOperation(0, 6, Operator.DIVISION) == 0);
 	}
 
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void shouldAddZeroAndZero() {
-		assertTrue(calculatorHandler.doDivision(10, -2) == -5);
+		assertTrue(calculatorHandler.doOperation(10, -2, Operator.DIVISION) == -5);
 	}
 
 }

@@ -10,17 +10,17 @@ public class CalculatorAdditionTest {
 
 	@Test
 	public void shouldAddTwoPositiveNumbers() {
-		assertTrue(calculatorHandler.doAddition(3, 5) == 8);
+		assertTrue(calculatorHandler.doOperation(3, 5, Operator.ADDITION) == 8);
 	}
 
 	@Test
 	public void shouldAddOnePositiveNumberAndZero() {
-		assertTrue(calculatorHandler.doAddition(3, 0) == 3);
+		assertTrue(calculatorHandler.doOperation(3, 0, Operator.ADDITION) == 3);
 	}
 
 	@Test
 	public void shouldAddZeroAndZero() {
-		assertTrue(calculatorHandler.doAddition(0, 0) == 0);
+		assertTrue(calculatorHandler.doOperation(0, 0, Operator.ADDITION) == 0);
 	}
 
 }
