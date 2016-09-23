@@ -10,8 +10,10 @@ public class CalculatorHandler {
 			return doSubtraction(operand1, operand2);
 		case MULTIPLICATION:
 			return doMultiplication(operand1, operand2);
+		case DIVISION:
+			return doDivision(operand1, operand2);
 		default:
-			throw new IllegalArgumentException("Operator not supported");
+			return 0;
 		}
 	}
 	
@@ -27,4 +29,7 @@ public class CalculatorHandler {
 		return operand1 * operand2;
 	}
 
+	private int doDivision(int operand1, int operand2) {
+		return operand1 / operand2;
+	}
 }

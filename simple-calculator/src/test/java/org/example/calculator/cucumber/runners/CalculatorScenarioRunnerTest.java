@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", glue = "org.example.calculator.cucumber.steps", strict = true)
+@CucumberOptions(features = "src/test/resources/features", glue = "org.example.calculator.cucumber.steps", strict = true, tags = {"~@notImplemented"})
 public class CalculatorScenarioRunnerTest {
 
 }
