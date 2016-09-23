@@ -16,6 +16,11 @@ public enum Operator {
 		return desc;
 	}
 	
+	@Override
+	public String toString() {
+		return getDesc();
+	}
+	
 	public static Operator getByDesc(String desc) {
 		for (Operator operator: Operator.values()) {
 			if (operator.getDesc().equalsIgnoreCase(desc)) {
